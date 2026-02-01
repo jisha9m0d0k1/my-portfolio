@@ -1,25 +1,34 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>	
- <meta charset="utf-8">
- <title>home</title>
- <meta name="description" content="マグネットボーイもどき">
- <link rel="stylesheet" href="style.css">
+
+<head>
+    <meta charset="utf-8">
+    <title>home</title>
+    <meta name="description" content="マグネットボーイもどき">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1 id="phead">音楽</h1>
-    <div id="work-music">
-        <label>01</label>
-        <br>
-        <a href="https://youtu.be/gOHgOMMVbCA?si=ylsM4YJj4n1iy1mG">作品名：ガラクタ</a>
-        <br><br>
-        <label>02</label>
-        <br><br>
-        <label>03</label>
-        <br><br>
-        <label>04</label>
-        <br><br>
-        <label>05</label>
-    </div>
+
+    <div id="header"></div>
+    <main>
+        <section>
+            <h2 class="subtitle">Music</h2>
+            <p>作品名：ガラクタ</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/gOHgOMMVbCA?si=PMm9fJQyzh-HoyWk"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <p>アダダ・アダハダ</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/HCv4rd2_vho?si=ISQST27MqHCIuedN"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+    </main>
+    <div id="footer"></div> <!-- ← フッター読み込み場所 -->
+    <script src="loadParts.js"></script> <!-- ADD 2026/02/01 -->
 </body>
+
 </html>
