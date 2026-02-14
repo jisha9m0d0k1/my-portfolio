@@ -6,10 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const depth = parts.length - 1; // ファイル名自体を除いた階層数
   const prefix = depth > 0 ? "../".repeat(depth) : "./";
 
-  console.log("現在のパス:", path);  // デバッグ用に一時的に復活
-  console.log("depth:", depth);
-  console.log("prefix:", prefix);
-
   // ヘッダー読み込み
   fetch(prefix + "header.html")
     .then(res => res.text())
@@ -17,6 +13,17 @@ document.addEventListener("DOMContentLoaded", () => {
       const header = document.getElementById("header");
       header.innerHTML = data;
 
+      // ADD 2026/02/14 START
+      // ★ここ追加：メニューリンクのパスを調整
+      const menuLinks = header.querySelectorAll('#menu a');
+      menuLinks.forEach(link => {
+        const href = link.getAttribute('href');
+        // 相対パスならprefixをつける（外部リンクは除外）
+        if (href && !href.startsWith('http') && !href.startsWith('#')) {
+          link.href = prefix + href;
+        }
+      });
+      // ADD 2026/02/14 END
       const btn = document.getElementById("menu-btn");
       const menu = document.getElementById("menu");
 
@@ -52,5 +59,5 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     })
     .catch(err => console.error("footer fetch失敗", err));
-    
+
 });
