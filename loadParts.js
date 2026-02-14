@@ -6,6 +6,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const depth = parts.length - 1; // ファイル名自体を除いた階層数
   const prefix = depth > 0 ? "../".repeat(depth) : "./";
 
+  console.log("現在のパス:", path);  // デバッグ用に一時的に復活
+  console.log("depth:", depth);
+  console.log("prefix:", prefix);
+
   // ヘッダー読み込み
   fetch(prefix + "header.html")
     .then(res => res.text())
