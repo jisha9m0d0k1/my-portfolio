@@ -1,0 +1,63 @@
+body {
+    /* MOD 2026/02/01 START */
+    background-color: #fafafa;
+    /* background-color: black; */
+    color: black;
+    /* color: aliceblue; */
+    display: flex;
+    flex-direction: column;
+    /* height: 100vh;            */
+    /* ビューポートの高さに合わせる */
+    /* margin: 0;                */
+    /* ページの余白をなくす */
+    /* MOD 2026/02/01 END */
+}
+main {
+  max-width: 1200px;
+  margin: 30px auto 0;
+  /* ADD 2026/02/0/1 START */
+  flex: 1;  /* メインコンテンツが伸びる */
+  padding: 0 20px;
+  /* ADD 2026/02/0/1 END */
+  /* 上に余白作る＝ヘッダー避け */
+  /* text-align: center; */
+}
+#works-book{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* MOD 2026/02/01 START */
+    color: black;
+    /* color: aliceblue; */
+    /* MOD 2026/02/01 END */
+    height: 100vh;           /* ビューポートの高さに合わせる */
+    margin: 0;               /* ページの余白をなくす */
+}
+
+a {
+    text-decoration: none;
+    /* MOD 2026/02/01 START */
+    color: black;
+    /* color: aliceblue; */
+    /* MOD 2026/02/01 END */
+}
+
+a:hover {
+    color: darkturquoise;
+}
+
+a#amusic:hover {
+    color:darkred;
+}
+a#abookshelf:hover{
+    color:rgb(0, 110, 184);
+}
+
+/* 小説 */
+/* MOD 2026/02/01 START */
+#arasuji p {
+    padding-left: 20px;  /* 左に余白を追加 */
+}
+/* MOD 2026/02/01 END */
