@@ -64,6 +64,7 @@ img {
   user-select: none;
   -webkit-user-drag: none;
   pointer-events: none;
+    max-width: 100%;        /* スマホでは画面幅に収める */
 }
 
 /*  罫線 */
