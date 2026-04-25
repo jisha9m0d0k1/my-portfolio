@@ -186,3 +186,18 @@ img {
   font-size: 90%; /* 親要素に対する割合 */
 }
 /* ADD 2026/02/01 END */
+
+/* ADD 2026/04/25 START */
+
+#prrofile_img {
+/* 上下の端だけ透過 */
+ mask-image: linear-gradient(to bottom, transparent , black 10%, black 90%, transparent );
+opacity: 0.8;
+ width:600px;
+}
+
+#chui{
+opacity: 0.8;
+font-size: small;
+}
+/* ADD 2026/04/25 END */

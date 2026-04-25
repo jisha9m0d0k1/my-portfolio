@@ -1,0 +1,23 @@
+/* ADD 2026.04.25 */
+/* お絵かきページ専用スタイル */
+section {
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ddd;  /* 区切り線 */
+  max-width: 100%;        /* スマホでは画面幅に収める */
+  height: auto;           /* 縦横比を保つ */
+}
+
+section:last-child {
+  border-bottom: none;  /* 最後の線は消す */
+}
+
+section img {
+  display: block;
+  margin-bottom: 10px;
+}
+
+section p {
+  margin: 5px 0;
+  color: #666;
+}
